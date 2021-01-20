@@ -1,2 +1,2 @@
-# Login-and-Signup-Form-
+# Login-and-Signup-Form
 Form Validation using JavaScript.
