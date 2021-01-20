@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>  Form Validation </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <!-- form header -->
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+          <img src="user-icon.png"><br>
+          Login Form</div>
+        <div class="title signup">
+          <img src="user-icon.png"><br>
+          Signup Form</div>
+      </div>
+
+         <!-- form control silder botton -->
+    <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+
+        <!-- form control login -->
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Address or Phone Number" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+          </form>
+
+          <!-- form control signup -->
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Email Address or Phone Number" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <p class="notice">Password must be at least 8 charaters.</p>
+            <div class="field">
+              <input type="password2" placeholder="Confirm password" required>
+            </div>
+            <p><span><input type= "checkbox"></span>I agree to the terms of services</p>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="style.js"></script>
+  </body>
+</html>
